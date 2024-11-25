@@ -1,0 +1,269 @@
+/* Estilo para o corpo da página */
+body
+{
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Container principal do resumo */
+.resumo-container
+{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título principal da página */
+.resumo-container h1
+{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Espaço para as imagens dos produtos */
+.produto-imagem
+{
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+/* Tabelas do resumo */
+.resumo-tabela
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.resumo-tabela th, .resumo-tabela td
+{
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.resumo-tabela th
+{
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.resumo-tabela td
+{
+    color: #555;
+}
+
+/* Total do pedido */
+.resumo-total
+{
+    margin-top: 20px;
+    font-size: 1.4em;
+    color: #333;
+}
+
+/* Estilo para o link de resumo do pedido */
+.resumo-pedido-link
+{
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 10px;
+    display: block;
+}
+
+.resumo-pedido-link:hover
+{
+    text-decoration: underline;
+}
+
+/* Estilo para a mensagem */
+.mensagem
+{
+    background-color: #f0f8ff;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* Estilo para o botão Remover */
+.remover
+{
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.remover:hover
+{
+    background-color: #ff3333;
+    transform: scale(1.05);
+}
+
+.remover:active
+{
+    background-color: #e60000;
+    transform: scale(0.95);
+}
+
+/* Estilo para o botão Alterar Pedido */
+.alterar
+{
+    background-color: #ffc107; /* Amarelo para o botão Alterar Pedido */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+.alterar:hover
+{
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+.alterar:active
+{
+    background-color: #c69500;
+    transform: scale(0.98);
+}
+
+/* Estilo para o botão de Confirmar Pedido */
+.confirmar-pedido-button
+{
+    background-color: #28a745; /* Cor verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+}
+
+.confirmar-pedido-button:hover
+{
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.confirmar-pedido-button:active
+{
+    background-color: #1e7e34;
+    transform: scale(0.98);
+}
+
+/* Estilo para o botão Adicionar Pedido */
+.adicionar
+{
+    background-color: #28a745; /* Cor verde para Adicionar Pedido */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+.adicionar:hover
+{
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.adicionar:active
+{
+    background-color: #1e7e34;
+    transform: scale(0.98);
+}
+
+.produto-imagem, .detalhes-imagem
+{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Garantir que o body e o container principal tenham largura total */
+body, .container
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Formulários de ação (alterar/remover) */
+form button
+{
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+}
+
+form button:hover
+{
+    background-color: #0056b3;
+}
+
+form input[type="number"]
+{
+    width: 60px;
+    padding: 5px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* Link de voltar */
+header p a
+{
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header p a:hover
+{
+    text-decoration: underline;
+}
